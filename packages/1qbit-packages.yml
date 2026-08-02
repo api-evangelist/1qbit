@@ -1,0 +1,73 @@
+generated: '2026-08-02'
+method: searched
+source: https://pypi.org/ + https://github.com/1QB-Information-Technologies
+note: >-
+  1QBit publishes no API client SDK — there is no public 1QBit API to client. These
+  are first-party open-source research/solver libraries published to PyPI by 1QB
+  Information Technologies (confirmed first-party by the @1qbit.com author emails
+  in the package metadata and by the 1QB-Information-Technologies GitHub org links).
+  Registries probed with no first-party 1QBit result: npm, Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist, crates.io.
+packages:
+- language: python
+  registry: pypi
+  name: ccvm-simulators
+  version: 1.0.1
+  url: https://pypi.org/project/ccvm-simulators/
+  install: pip install ccvm-simulators
+  official: true
+  api_client: false
+  kind: solver-library
+  description: Solve continuous non-convex optimization problems with Coherent Continuous-Variable
+    Machine (CCVM) architectures and simulators.
+  license: GNU Affero General Public License v3.0
+  source_code: https://github.com/1QB-Information-Technologies/ccvm
+  author: 1QBit
+  author_email: support@1qbit.com
+  last_release: '2023-12-21'
+  x-evidence:
+    fetched: '2026-08-02'
+    url: https://pypi.org/pypi/ccvm-simulators/json
+    http_status: 200
+- language: python
+  registry: pypi
+  name: openqemist
+  version: 0.2.1
+  url: https://pypi.org/project/openqemist/
+  install: pip install openqemist
+  official: true
+  api_client: false
+  kind: quantum-chemistry-library
+  description: Quantum chemistry simulation library — the open-source portion of 1QBit's
+    QEMIST package.
+  license: Apache-2.0 (stated in project docs; PyPI license field empty)
+  source_code: https://github.com/1QB-Information-Technologies/openqemist
+  source_code_status: 404
+  source_code_note: The GitHub repository is no longer public (HTTP 404 as of 2026-08-02);
+    the PyPI distribution remains available.
+  author: Rudi Plesch
+  author_email: rudi.plesch@1qbit.com
+  last_release: '2020-02-06'
+  x-evidence:
+    fetched: '2026-08-02'
+    url: https://pypi.org/pypi/openqemist/json
+    http_status: 200
+repositories:
+- name: ccvm
+  url: https://github.com/1QB-Information-Technologies/ccvm
+  language: Python
+  description: Solve continuous non-convex optimization problems with Coherent Continuous-Variable
+    Machine (CCVM) architectures and solvers
+- name: NEM
+  url: https://github.com/1QB-Information-Technologies/NEM
+  language: Python
+  description: Neural Error Mitigation of Near-Term Quantum Simulations (arXiv:2105.08086)
+- name: COOL
+  url: https://github.com/1QB-Information-Technologies/COOL
+  language: C
+  description: 'Controlled Online Optimization Learning (COOL): Finding the Ground
+    State of Spin Hamiltonians with Reinforcement Learning (arXiv:2003.00011)'
+- name: quicc-mimo-qubo-instances
+  url: https://github.com/1QB-Information-Technologies/quicc-mimo-qubo-instances
+  language: null
+  description: null

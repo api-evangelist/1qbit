@@ -1,0 +1,45 @@
+# 1QBit
+
+> 1QB Information Technologies Inc. (1QBit) is a quantum computing software company founded in 2012 and headquartered in Vancouver, British Columbia, Canada. It builds hardware-agnostic algorithms and software for optimization, simulation, and machine learning that run across quantum, quantum-inspired, and classical high-performance computing hardware.
+
+1QBit works in computational finance, life sciences and quantum chemistry, materials, and telecommunications, with hardware and platform partnerships including D-Wave, Fujitsu, IBM, and Microsoft Azure Quantum. It participates in DARPA's Quantum Benchmarking Initiative (QBI) on automated design tools for utility-scale quantum computation.
+
+**API status (verified 2026-08-02): 1QBit publishes no public API.** Its 1Qloud marketing page cites Python SDK, gRPC, and REST API interfaces, but there is no public developer portal, no API reference, and no machine-readable contract (no OpenAPI, AsyncAPI, GraphQL SDL, MCP server, or A2A agent card was found on any reachable host). The former developer portal host `portal.1qbit.com` no longer resolves. Access to 1Qloud is arranged through industry partnership; the 1Qloud page's sign-up call to action points at Microsoft Azure Quantum.
+
+## Company
+
+- [1QBit](https://1qbit.com/): Company website
+- [Services](https://1qbit.com/services/): AI and optimization applications, control systems and service architectures for exotic computing platforms, and hardware design services
+- [1Qloud Optimization Platform](https://1qbit.com/1qloud/): The optimization platform product page
+- [Contact](https://1qbit.com/contact-us/): Contact form
+- [Careers](https://1qbit.com/careers/current-openings/): Current openings
+
+## Code
+
+- [1QB-Information-Technologies on GitHub](https://github.com/1QB-Information-Technologies): The 1QBit GitHub organization (4 public repositories)
+- [ccvm](https://github.com/1QB-Information-Technologies/ccvm): Coherent Continuous-Variable Machine (CCVM) architectures and solvers for continuous non-convex optimization
+- [NEM](https://github.com/1QB-Information-Technologies/NEM): Neural Error Mitigation of Near-Term Quantum Simulations (arXiv:2105.08086)
+- [COOL](https://github.com/1QB-Information-Technologies/COOL): Controlled Online Optimization Learning — finding the ground state of spin Hamiltonians with reinforcement learning (arXiv:2003.00011)
+- [quicc-mimo-qubo-instances](https://github.com/1QB-Information-Technologies/quicc-mimo-qubo-instances): MIMO QUBO problem instances
+
+## Packages
+
+- [ccvm-simulators (PyPI)](https://pypi.org/project/ccvm-simulators/): `pip install ccvm-simulators` — first-party CCVM optimization solver library, AGPL-3.0
+- [openqemist (PyPI)](https://pypi.org/project/openqemist/): `pip install openqemist` — first-party open-source portion of 1QBit's QEMIST quantum chemistry package (last release 2020; GitHub repository no longer public)
+
+## Research
+
+- [Research Papers](https://1qbit.com/our-thinking/research-papers/): 1QBit's published research
+- [News](https://1qbit.com/news/): Company news ([RSS](https://1qbit.com/feed/))
+
+## Legal
+
+- [Terms of Use](https://1qbit.com/terms-of-use)
+- [Privacy Policy](https://1qbit.com/privacy-policy)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/1qbit/refs/heads/main/apis.yml): APIs.json 0.20 index for 1QBit
+- [packages/1qbit-packages.yml](https://raw.githubusercontent.com/api-evangelist/1qbit/refs/heads/main/packages/1qbit-packages.yml): First-party package inventory
+- [well-known/1qbit-well-known.yml](https://raw.githubusercontent.com/api-evangelist/1qbit/refs/heads/main/well-known/1qbit-well-known.yml): /.well-known/ and spec-discovery probe record
+- [security/1qbit-domain-security.yml](https://raw.githubusercontent.com/api-evangelist/1qbit/refs/heads/main/security/1qbit-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe

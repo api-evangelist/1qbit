@@ -1,0 +1,64 @@
+generated: '2026-08-02'
+method: probed
+source: live HTTP probes of the 1QBit web host
+host: https://1qbit.com
+summary: >-
+  No /.well-known/ discovery document is published on any reachable 1QBit host. The
+  site is a WordPress marketing site; every probed path returned 404 (the WordPress
+  catch-all serves an HTML 404 body for several of them, so no candidate was a false
+  200). The historical developer portal host portal.1qbit.com has a dangling CNAME
+  (portal.1qbit-prod.com -> an AWS ELB name that no longer resolves) and could not
+  be probed; status.1qbit.com is likewise a dangling CNAME to status.ping.apex.sh.
+documents: []
+probes:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /llms.txt
+  status: 404
+spec_probes:
+- path: /openapi.json
+  status: 404
+- path: /openapi.yaml
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /v1/openapi.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /redoc
+  status: 404
+incidental_surfaces:
+- path: /wp-json/
+  status: 200
+  kind: wordpress-rest-api
+  note: >-
+    The marketing site's default WordPress REST API responds (e.g. /wp-json/wp/v2/pages
+    returns 200 application/json). This is CMS infrastructure, not a 1QBit product
+    API, so it is recorded here for completeness and deliberately NOT registered as
+    an API in apis.yml.
+unreachable_hosts:
+- host: portal.1qbit.com
+  reason: dangling CNAME (portal.1qbit-prod.com -> aee79deac477711ea87b006d7e9873ef-1766949233.us-west-2.elb.amazonaws.com,
+    no A record)
+- host: status.1qbit.com
+  reason: dangling CNAME (status.ping.apex.sh, no A record)
+- host: openqemist.1qbit.com
+  reason: S3 origin returns 403 AllAccessDisabled
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl -L, following redirects
