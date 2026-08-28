@@ -14,6 +14,17 @@ description: '1QB Information Technologies Inc. (1QBit) is a quantum computing s
   API contract — the former portal.1qbit.com host no longer resolves and access is
   arranged through industry partnerships. Its only public developer surface is a small
   GitHub organization of research code plus two first-party Python libraries on PyPI.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://1qbit.com/wp-content/uploads/2020/05/1QBit-favicon_512.png
 url: https://raw.githubusercontent.com/api-evangelist/1qbit/refs/heads/main/apis.yml
 x-type: company
