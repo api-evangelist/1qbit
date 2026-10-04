@@ -55,7 +55,7 @@ tags:
 - Company
 - Quantum Computing
 - Optimization
-- Machine-Learning
+- Machine Learning
 - Simulation
 - Scientific Computing
 - Research
@@ -69,6 +69,7 @@ tags_raw:
 - Scientific Computing
 - Research
 - Canada
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
