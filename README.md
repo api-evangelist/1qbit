@@ -64,25 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-1QB Information Technologies Inc. (1QBit) is a quantum computing software company founded in 2012 and headquartered in Vancouver, British Columbia, Canada. It builds hardware-agnostic algorithms and software for optimization, simulation, and machine learning across quantum, quantum-inspired, and classical high-performance computing hardware — in computational finance, life sciences and quantum chemistry, materials, and telecommunications. Hardware and platform partnerships include D-Wave, Fujitsu, IBM, and Microsoft Azure Quantum, and 1QBit participates in DARPA's Quantum Benchmarking Initiative (QBI).
+1QB Information Technologies Inc. (1QBit) is a quantum computing software company founded in 2012 and headquartered in Vancouver, British Columbia, Canada. It builds hardware-agnostic algorithms and software for optimization, simulation, and machine learning that run across quantum, quantum-inspired, and classical high-performance computing hardware, with work spanning computational finance, life sciences and quantum chemistry, materials, and telecommunications. 1QBit has hardware and platform partnerships with D-Wave, Fujitsu, IBM, and Microsoft Azure Quantum, and participates in DARPA's Quantum Benchmarking Initiative (QBI) on automated design tools for utility-scale quantum computation. The company markets a 1Qloud optimization platform whose own marketing page cites Python SDK, gRPC, and REST API interfaces, but as of August 2026 1QBit publishes no public developer portal, API reference, or machine-readable API contract — the former portal.1qbit.com host no longer resolves and access is arranged through industry partnerships. Its only public developer surface is a small GitHub organization of research code plus two first-party Python libraries on PyPI.
 
-- Website: https://1qbit.com/
-- Services: https://1qbit.com/services/
-- 1Qloud platform: https://1qbit.com/1qloud/
-- GitHub: https://github.com/1QB-Information-Technologies
-- Research papers: https://1qbit.com/our-thinking/research-papers/
+**Areas:** Company · Quantum Computing · Optimization · Machine Learning · Simulation · Scientific Computing · Research · Canada
 
-## API status
+## 1QBit on APIs.io
 
-**Verified 2026-08-02: 1QBit publishes no public API.** The 1Qloud product page cites Python SDK, gRPC, and REST API interfaces, but there is no public developer portal, no API reference, and no machine-readable contract. Contract discovery found no OpenAPI/Swagger, no GraphQL endpoint, no AsyncAPI, no MCP server, and no A2A agent card on any reachable host. The former developer portal `portal.1qbit.com` and status page `status.1qbit.com` are both dangling CNAMEs. Access to 1Qloud is arranged through industry partnership; the page's sign-up call to action points at Microsoft Azure Quantum.
+Everything profiled for 1QBit is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/1qbit/](https://apis.io/providers/1qbit/)** — or go straight to one of the APIs or properties below.
 
-Full probe record: [`well-known/1qbit-well-known.yml`](well-known/1qbit-well-known.yml).
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | File |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [1Qbit Domain Security](https://apis.io/security/1qbit/1qbit-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://1qbit.com/)
+- [Blog](https://1qbit.com/news/)
+- [Terms of service](https://1qbit.com/terms-of-use)
+- [Privacy policy](https://1qbit.com/privacy-policy)
+- [GitHub](https://github.com/1QB-Information-Technologies)
+
+## API Evangelist rating
+
+**Kin Score 10.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Packages | [`packages/1qbit-packages.yml`](packages/1qbit-packages.yml) |
-| Well-known / spec-discovery probes | [`well-known/1qbit-well-known.yml`](well-known/1qbit-well-known.yml) |
-| llms.txt | [`llms/1qbit-llms.txt`](llms/1qbit-llms.txt) |
-| Domain security | [`security/1qbit-domain-security.yml`](security/1qbit-domain-security.yml) |
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/1qbit/](https://apis.io/providers/1qbit/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 1QBit: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/1qbit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
